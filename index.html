@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navBar" class="navbar  d-none justify-content-around">
+        <span>Smart Login</span>
+        <button id="logoutButton" class="btn btn-outline-danger">Logout</button>
+    </nav>
+    <div class="container text-center my-5">
+        <div class="box m-auto p-5">
+            <!-- Login Section -->
+            <div id="loginSection" class="">
+                <h1>Smart Login System</h1>
+                <input id="inputEmail" class="form-control my-3" placeholder="Enter your email" type="text">
+                <input id="inputPass" class="form-control my-3" placeholder="Enter your password" type="password">
+                <div id="loginAlert" class="alert alert-danger d-none" role="alert"></div>
+                <button type="button" id="loginButton" class="btn w-100 btn-outline-info my-3">Login</button>
+                <p class="text-white">Don’t have an account? <a id="showSignUp" href="#">Sign Up</a></p>
+            </div>
+
+            <!-- Signup Section -->
+            <div id="signupSection" class="d-none">
+                <h1>Smart Login System</h1>
+                <input id="signupName" class="form-control my-3" placeholder="Enter your name" type="text">
+                <input id="signupEmail" class="form-control my-3" placeholder="Enter your email" type="text">
+                <input id="signupPass" class="form-control my-3" placeholder="Enter your password" type="password">
+                <div id="signupAlert" class="alert alert-danger d-none" role="alert"></div>
+                <button type="button" id="signupButton" class="btn w-100 btn-outline-success my-3">Sign Up</button>
+                <p class="text-white">Already have an account? <a id="showLogin" href="#">Login</a></p>
+            </div>
+            <div id="welcomeSection" class="d-none">
+                <!-- Welcome Message -->
+                <div class="d-flex justify-content-center align-items-center">
+                    <h2 id="welcomeMessage"></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
